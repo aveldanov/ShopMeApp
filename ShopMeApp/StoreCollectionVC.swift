@@ -21,7 +21,7 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 0
     }
     
     
