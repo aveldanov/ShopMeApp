@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		21E220F3265A19D4002D2C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F2265A19D4002D2C3B /* AppDelegate.swift */; };
 		21E220F5265A19D4002D2C3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F4265A19D4002D2C3B /* SceneDelegate.swift */; };
-		21E220F7265A19D4002D2C3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F6265A19D4002D2C3B /* ViewController.swift */; };
+		21E220F7265A19D4002D2C3B /* StoreCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F6265A19D4002D2C3B /* StoreCollectionVC.swift */; };
 		21E220FA265A19D5002D2C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E220F8265A19D5002D2C3B /* Main.storyboard */; };
 		21E220FC265A19D7002D2C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E220FB265A19D7002D2C3B /* Assets.xcassets */; };
 		21E220FF265A19D7002D2C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E220FD265A19D7002D2C3B /* LaunchScreen.storyboard */; };
+		21F3395B2661ED5B00363112 /* StoreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3395A2661ED5B00363112 /* StoreCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21E220EF265A19D4002D2C3B /* ShopMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E220F2265A19D4002D2C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21E220F4265A19D4002D2C3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21E220F6265A19D4002D2C3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21E220F6265A19D4002D2C3B /* StoreCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionVC.swift; sourceTree = "<group>"; };
 		21E220F9265A19D5002D2C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21E220FB265A19D7002D2C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21E220FE265A19D7002D2C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21E22100265A19D7002D2C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F3395A2661ED5B00363112 /* StoreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				21E220F2265A19D4002D2C3B /* AppDelegate.swift */,
 				21E220F4265A19D4002D2C3B /* SceneDelegate.swift */,
-				21E220F6265A19D4002D2C3B /* ViewController.swift */,
+				21E220F6265A19D4002D2C3B /* StoreCollectionVC.swift */,
+				21F3395A2661ED5B00363112 /* StoreCollectionViewController.swift */,
 				21E220F8265A19D5002D2C3B /* Main.storyboard */,
 				21E220FB265A19D7002D2C3B /* Assets.xcassets */,
 				21E220FD265A19D7002D2C3B /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21E220F7265A19D4002D2C3B /* ViewController.swift in Sources */,
+				21E220F7265A19D4002D2C3B /* StoreCollectionVC.swift in Sources */,
 				21E220F3265A19D4002D2C3B /* AppDelegate.swift in Sources */,
+				21F3395B2661ED5B00363112 /* StoreCollectionViewController.swift in Sources */,
 				21E220F5265A19D4002D2C3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
