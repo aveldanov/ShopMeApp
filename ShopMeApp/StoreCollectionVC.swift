@@ -16,6 +16,8 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
