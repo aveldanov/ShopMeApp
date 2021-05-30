@@ -52,7 +52,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="h9f-MP-tQe">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="h9f-MP-tQe" customClass="ItemCollectionViewCell" customModule="ShopMeApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="238"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HuQ-Db-kQG">
@@ -95,6 +95,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="182" height="238"/>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="jKK-du-BSY" id="7Eu-Hv-J2m"/>
+                                            <outlet property="itemNameLabel" destination="Qg5-L4-xDw" id="ve2-Hu-ifV"/>
+                                            <outlet property="itemPriceLabel" destination="GTf-OM-3Jf" id="VHd-ps-Agh"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
