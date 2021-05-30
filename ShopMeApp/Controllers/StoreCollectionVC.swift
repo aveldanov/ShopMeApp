@@ -32,14 +32,15 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ItemCollectionViewCell else {
             fatalError("no cell configured")
         }
         
+        let item = items[indexPath.row]
+        cell.configure(forItem: item)
         
         
-        
-        return UICollectionViewCell()
+        return cell
     }
     
     
