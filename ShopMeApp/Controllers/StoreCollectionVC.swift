@@ -21,16 +21,24 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 0
+        return 1
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return items.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) else {
+            fatalError("no cell configured")
+        }
+        
+        
+        
+        
         return UICollectionViewCell()
     }
     
