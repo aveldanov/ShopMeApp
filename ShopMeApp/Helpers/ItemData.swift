@@ -7,5 +7,5 @@
 
 import Foundation
 
-
-
+let defaultPrice = 9.99
+let salmon = Item(image: UIImage(name: "food1"!), name: "salmon", price: defaultPrice)
