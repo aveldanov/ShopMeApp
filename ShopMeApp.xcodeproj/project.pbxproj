@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		213CFAEE26641D22002C7C35 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CFAED26641D22002C7C35 /* DetailViewController.swift */; };
+		213CFAF426642386002C7C35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CFAF326642386002C7C35 /* Item.swift */; };
 		21E220F3265A19D4002D2C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F2265A19D4002D2C3B /* AppDelegate.swift */; };
 		21E220F5265A19D4002D2C3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F4265A19D4002D2C3B /* SceneDelegate.swift */; };
 		21E220F7265A19D4002D2C3B /* StoreCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E220F6265A19D4002D2C3B /* StoreCollectionVC.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		213CFAED26641D22002C7C35 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		213CFAF326642386002C7C35 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		21E220EF265A19D4002D2C3B /* ShopMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E220F2265A19D4002D2C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21E220F4265A19D4002D2C3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213CFAEF2664233E002C7C35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21E220F6265A19D4002D2C3B /* StoreCollectionVC.swift */,
+				213CFAED26641D22002C7C35 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		213CFAF026642358002C7C35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		213CFAF126642363002C7C35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				213CFAF326642386002C7C35 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		213CFAF22664236F002C7C35 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		21E220E6265A19D4002D2C3B = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +93,14 @@
 		21E220F1265A19D4002D2C3B /* ShopMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				213CFAF22664236F002C7C35 /* Helpers */,
+				213CFAF126642363002C7C35 /* Model */,
+				213CFAF026642358002C7C35 /* View */,
 				21E220F2265A19D4002D2C3B /* AppDelegate.swift */,
 				21E220F4265A19D4002D2C3B /* SceneDelegate.swift */,
-				21E220F6265A19D4002D2C3B /* StoreCollectionVC.swift */,
 				21F3395A2661ED5B00363112 /* StoreCollectionViewController.swift */,
 				21E220F8265A19D5002D2C3B /* Main.storyboard */,
-				213CFAED26641D22002C7C35 /* DetailViewController.swift */,
+				213CFAEF2664233E002C7C35 /* Controllers */,
 				21E220FB265A19D7002D2C3B /* Assets.xcassets */,
 				21E220FD265A19D7002D2C3B /* LaunchScreen.storyboard */,
 				21E22100265A19D7002D2C3B /* Info.plist */,
@@ -147,6 +182,7 @@
 				21E220F3265A19D4002D2C3B /* AppDelegate.swift in Sources */,
 				213CFAEE26641D22002C7C35 /* DetailViewController.swift in Sources */,
 				21F3395B2661ED5B00363112 /* StoreCollectionViewController.swift in Sources */,
+				213CFAF426642386002C7C35 /* Item.swift in Sources */,
 				21E220F5265A19D4002D2C3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
