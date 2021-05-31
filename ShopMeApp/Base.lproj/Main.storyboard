@@ -127,7 +127,7 @@
         <!--Detail View Controller-->
         <scene sceneID="sA8-Al-MgH">
             <objects>
-                <viewController id="fg3-J5-tEl" customClass="DetailViewController" customModule="ShopMeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="fg3-J5-tEl" customClass="DetailViewController" customModule="ShopMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ffR-4i-su4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
