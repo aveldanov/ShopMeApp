@@ -16,9 +16,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var buyItemButton: UIButton!
     @IBOutlet weak var hideAdsButton: UIButton!
     
+    public private(set) var item:Item!
     
     func initData(forItem item:Item){
-
+        self.item = item
         
     }
     
