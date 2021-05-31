@@ -45,9 +45,11 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailVC") else {
+        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailVC") as? DetailViewController else {
             fatalError("no DetailVC")
         }
+        
+        
         
     }
     
