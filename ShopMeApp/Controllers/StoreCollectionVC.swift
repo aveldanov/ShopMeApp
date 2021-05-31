@@ -64,3 +64,16 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
     
 }
 
+
+
+extension StoreCollectionVC: IAPServiceDelegate{
+    func iapProductsLoaded() {
+        <#code#>
+    }
+    
+    
+    
+    
+    
+}
+

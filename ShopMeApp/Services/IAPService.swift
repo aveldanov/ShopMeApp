@@ -8,17 +8,26 @@
 import Foundation
 import StoreKit
 
-class IAPService: NSObject, SKProductsRequestDelegate{
+// create protocol to pass data between view controllers using delegation
 
+protocol IAPServiceDelegate {
+    func iapProductsLoaded()
+}
+
+class IAPService: NSObject, SKProductsRequestDelegate{
     
-   static let shared = IAPService()
+    static let shared = IAPService()
+    
+    var delegate: IAPServiceDelegate?
+    
+    
     var products = [SKProduct]()
     var productIds = Set<String>()
     var productReqest = SKProductsRequest()
     
     func loadProducts(){
-         productIdToStringSet()
-         requestProducts(forIds: productIds)
+        productIdToStringSet()
+        requestProducts(forIds: productIds)
         
         
     }
@@ -39,6 +48,14 @@ class IAPService: NSObject, SKProductsRequestDelegate{
     
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         self.products = response.products
+        
+        if products.count == 0{
+            requestProducts(forIds: productIds)
+        }else{
+            // inform the app that purchases downloaded
+            
+            delegate?.iapProductsLoaded()
+        }
     }
     
     
