@@ -9,9 +9,18 @@ import Foundation
 import StoreKit
 
 class IAPService: NSObject, SKProductsRequestDelegate{
+
+    
    static let shared = IAPService()
     
+    func loadProducts(){
+        
+        
+    }
     
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        <#code#>
+    }
     
     
 }
