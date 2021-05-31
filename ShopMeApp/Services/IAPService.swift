@@ -9,7 +9,7 @@ import Foundation
 
 
 class IAPService{
-    let shared = IAPService()
+   static let shared = IAPService()
     
     
     
