@@ -18,19 +18,18 @@ class DetailViewController: UIViewController {
     
     
     func initData(forItem item:Item){
-        itemImageView.image = item.image
-        itemNameLabel.text = item.name
-        itemPriceLabel.text = String(item.price)
-        
-        
+
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        itemImageView.image = item.image
+        itemNameLabel.text = item.name
+        itemPriceLabel.text = String(item.price)
+        buyItemButton.setTitle("Buy this item for $\(item.price)", for: .normal)
     }
-    
+
 
     @IBAction func buyButtonPressed(_ sender: UIButton) {
     }

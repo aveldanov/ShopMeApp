@@ -49,8 +49,10 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
             fatalError("no DetailVC")
         }
         
+        let item = items[indexPath.row]
+        detailVC.initData(forItem: item)
         present(detailVC, animated: true, completion: nil)
-        
+
         
     }
     
