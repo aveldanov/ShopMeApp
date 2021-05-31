@@ -49,6 +49,7 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
             fatalError("no DetailVC")
         }
         
+        present(detailVC, animated: true, completion: nil)
         
         
     }

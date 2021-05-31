@@ -17,6 +17,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var hideAdsButton: UIButton!
     
     
+    func initData(forItem item:Item){
+        itemImageView.image = item.image
+        itemNameLabel.text = item.name
+        itemPriceLabel.text = String(item.price)
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
