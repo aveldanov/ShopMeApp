@@ -6,9 +6,9 @@
 //
 
 import Foundation
+import StoreKit
 
-
-class IAPService{
+class IAPService: NSObject, SKProductsRequestDelegate{
    static let shared = IAPService()
     
     
