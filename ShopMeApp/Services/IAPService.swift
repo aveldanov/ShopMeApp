@@ -12,12 +12,13 @@ class IAPService: NSObject, SKProductsRequestDelegate{
 
     
    static let shared = IAPService()
+    var products = [SKProduct]()
     var productIds = Set<String>()
     var productReqest = SKProductsRequest()
     
     func loadProducts(){
-        // productIdToStringSet()
-        // requestProducts
+         productIdToStringSet()
+         requestProducts(forIds: productIds)
         
         
     }
@@ -37,7 +38,7 @@ class IAPService: NSObject, SKProductsRequestDelegate{
     
     
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        <#code#>
+        self.products = response.products
     }
     
     
