@@ -45,25 +45,25 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rj0-j8-H9k">
                                 <rect key="frame" x="20" y="104" width="374" height="738"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g7u-Qj-p1X">
-                                    <size key="itemSize" width="182" height="238"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g7u-Qj-p1X">
+                                    <size key="itemSize" width="148" height="187"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="h9f-MP-tQe" customClass="ItemCollectionViewCell" customModule="ShopMeApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="182" height="238"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="238"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HuQ-Db-kQG">
-                                            <rect key="frame" x="0.0" y="0.0" width="182" height="238"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="131" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food1" translatesAutoresizingMaskIntoConstraints="NO" id="jKK-du-BSY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="131" height="238"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg5-L4-xDw">
-                                                    <rect key="frame" x="12" y="12" width="158" height="25"/>
+                                                    <rect key="frame" x="12" y="12" width="107" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="n5p-lC-oic"/>
                                                     </constraints>
@@ -72,7 +72,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTf-OM-3Jf">
-                                                    <rect key="frame" x="12" y="37" width="158" height="20"/>
+                                                    <rect key="frame" x="12" y="37" width="107" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="4DY-fv-epK"/>
                                                     </constraints>
@@ -94,7 +94,7 @@
                                                 <constraint firstItem="GTf-OM-3Jf" firstAttribute="leading" secondItem="HuQ-Db-kQG" secondAttribute="leading" constant="12" id="glC-vK-Caa"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="182" height="238"/>
+                                        <size key="customSize" width="131" height="238"/>
                                         <connections>
                                             <outlet property="itemImageView" destination="jKK-du-BSY" id="7Eu-Hv-J2m"/>
                                             <outlet property="itemNameLabel" destination="Qg5-L4-xDw" id="ve2-Hu-ifV"/>
