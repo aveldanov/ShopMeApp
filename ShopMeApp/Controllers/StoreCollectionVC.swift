@@ -18,6 +18,8 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        IAPService.shared.delegate = self
+        IAPService.shared.loadProducts()
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -68,7 +70,7 @@ class StoreCollectionVC: UIViewController, UICollectionViewDelegate, UICollectio
 
 extension StoreCollectionVC: IAPServiceDelegate{
     func iapProductsLoaded() {
-        <#code#>
+        print("IAP Products Loaded")
     }
     
     
