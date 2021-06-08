@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var ItemImageView: UIImageView!
     @IBOutlet weak var ItemNameLabel: UILabel!
     @IBOutlet weak var ItemPriceLabel: UILabel!
     @IBOutlet weak var adView: UIView!

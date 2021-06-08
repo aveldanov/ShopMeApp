@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tWr-s5-07I" customClass="ItemCollectionViewCell" customModule="ShopMeApp" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tWr-s5-07I" customClass="ItemCollectionViewCell" customModule="ShopMeApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zxz-RX-n6S">
@@ -70,6 +70,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="160" height="230"/>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="NdC-lR-5bB" id="Dwh-bA-ZK5"/>
+                                            <outlet property="itemNameLabel" destination="nkb-Le-aWF" id="mPj-Th-yes"/>
+                                            <outlet property="itemPriceLabel" destination="TdJ-gH-shb" id="j74-Uz-Moe"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -210,12 +215,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ItemImageView" destination="f66-P0-U2D" id="O6D-8M-bPY"/>
                         <outlet property="ItemNameLabel" destination="tvy-Mo-oCb" id="okr-9q-5yV"/>
                         <outlet property="ItemPriceLabel" destination="jw0-DW-4jx" id="MXK-Ch-eoX"/>
                         <outlet property="adView" destination="vto-xv-Qac" id="hp8-8W-lTY"/>
                         <outlet property="buyItemBtn" destination="Ou8-ky-pJc" id="pdo-xa-gI3"/>
                         <outlet property="hideAdBtn" destination="05r-17-QVe" id="sHI-WJ-mIb"/>
-                        <outlet property="itemImageView" destination="f66-P0-U2D" id="O6D-8M-bPY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8go-EW-9Yk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
