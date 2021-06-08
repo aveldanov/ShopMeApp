@@ -39,6 +39,11 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
         
         return cell
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        <#code#>
+    }
 
     @IBAction func restoreButtonClicked(_ sender: UIButton) {
     }
