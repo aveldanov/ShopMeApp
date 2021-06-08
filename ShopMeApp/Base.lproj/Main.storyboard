@@ -92,6 +92,9 @@
                                 <state key="normal" title="?">
                                     <color key="titleColor" red="0.039215686270000001" green="0.50588235290000005" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="restoreButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yB3-fR-ry0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -108,6 +111,9 @@
                             <constraint firstItem="G58-EY-Bsx" firstAttribute="leading" secondItem="zjh-1d-DGA" secondAttribute="trailing" constant="20" id="qt5-3l-MJR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="AwQ-gs-8Pv" id="2Un-k7-PAH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
