@@ -31,12 +31,13 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ItemCollectionViewCell else {
             fatalError("No Cell Configured")
         }
+        let item = foodItems[indexPath.row]
+        cell.configureCell(for: item)
         
-        
-        return UICollectionViewCell()
+        return cell
     }
 
     @IBAction func restoreButtonClicked(_ sender: UIButton) {
