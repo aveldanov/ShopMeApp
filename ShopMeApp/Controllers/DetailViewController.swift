@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
         ItemImageView.image = item.image
         ItemNameLabel.text = item.name
         ItemPriceLabel.text = String(item.price)
-        
+        buyItemBtn.setTitle("Buy this item for $\(item.price)", for: .normal)
     }
     
     

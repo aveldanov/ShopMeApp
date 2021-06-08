@@ -45,6 +45,8 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
         guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailVC") as? DetailViewController else {
             fatalError("No DetailVC controller")
         }
+        let item = foodItems[indexPath.row]
+        detailVC.initData(forItem: item)
         present(detailVC, animated: true, completion: nil)
         
         
