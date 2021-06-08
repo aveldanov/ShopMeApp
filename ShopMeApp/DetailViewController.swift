@@ -9,11 +9,31 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var ItemNameLabel: UILabel!
+    @IBOutlet weak var ItemPriceLabel: UILabel!
+    @IBOutlet weak var adView: UIView!
+    @IBOutlet weak var buyItemBtn: UIButton!
+    @IBOutlet weak var hideAdBtn: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
-
+    @IBAction func buyBtnClicked(_ sender: UIButton) {
+    }
+    
+    @IBAction func hideAdBtnClicked(_ sender: UIButton) {
+    }
+    @IBAction func closeBtnClicked(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
+    
 }
