@@ -13,6 +13,7 @@
 		2190359B266EFDA200B3F8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21903599266EFDA200B3F8AB /* Main.storyboard */; };
 		2190359D266EFDA400B3F8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2190359C266EFDA400B3F8AB /* Assets.xcassets */; };
 		219035A0266EFDA400B3F8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2190359E266EFDA400B3F8AB /* LaunchScreen.storyboard */; };
+		219035A8266F098900B3F8AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219035A7266F098900B3F8AB /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2190359C266EFDA400B3F8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2190359F266EFDA400B3F8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219035A1266EFDA400B3F8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219035A7266F098900B3F8AB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2190359C266EFDA400B3F8AB /* Assets.xcassets */,
 				2190359E266EFDA400B3F8AB /* LaunchScreen.storyboard */,
 				219035A1266EFDA400B3F8AB /* Info.plist */,
+				219035A7266F098900B3F8AB /* DetailViewController.swift */,
 			);
 			path = ShopMeApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				21903598266EFDA200B3F8AB /* StoreFrontViewController.swift in Sources */,
 				21903594266EFDA200B3F8AB /* AppDelegate.swift in Sources */,
 				21903596266EFDA200B3F8AB /* SceneDelegate.swift in Sources */,
+				219035A8266F098900B3F8AB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
