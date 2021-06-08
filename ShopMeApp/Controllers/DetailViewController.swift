@@ -16,17 +16,21 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var buyItemBtn: UIButton!
     @IBOutlet weak var hideAdBtn: UIButton!
     
-    func initData(forItem item:Item){
-        ItemImageView.image = item.image
-        ItemNameLabel.text = item.name
-        ItemPriceLabel.text = String(item.price)
-        buyItemBtn.setTitle("Buy this item for $\(item.price)", for: .normal)
+    
+    public private(set) var item: Item!
+    
+    
+    func initData(forItem item: Item){
+        self.item = item
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        ItemImageView.image = item.image
+        ItemNameLabel.text = item.name
+        ItemPriceLabel.text = String(item.price)
+        buyItemBtn.setTitle("Buy this item for $\(item.price)", for: .normal)
     }
     
     @IBAction func buyBtnClicked(_ sender: UIButton) {
