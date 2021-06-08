@@ -14,6 +14,7 @@
 		2190359D266EFDA400B3F8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2190359C266EFDA400B3F8AB /* Assets.xcassets */; };
 		219035A0266EFDA400B3F8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2190359E266EFDA400B3F8AB /* LaunchScreen.storyboard */; };
 		219035A8266F098900B3F8AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219035A7266F098900B3F8AB /* DetailViewController.swift */; };
+		219035AE266F0E2300B3F8AB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219035AD266F0E2300B3F8AB /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2190359F266EFDA400B3F8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219035A1266EFDA400B3F8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219035A7266F098900B3F8AB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		219035AD266F0E2300B3F8AB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		21903592266EFDA200B3F8AB /* ShopMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				219035AC266F0E0300B3F8AB /* Helpers */,
+				219035AB266F0DFC00B3F8AB /* Views */,
+				219035AA266F0DEF00B3F8AB /* Model */,
+				219035A9266F0B6F00B3F8AB /* Controllers */,
 				21903593266EFDA200B3F8AB /* AppDelegate.swift */,
 				21903595266EFDA200B3F8AB /* SceneDelegate.swift */,
-				21903597266EFDA200B3F8AB /* StoreFrontViewController.swift */,
 				21903599266EFDA200B3F8AB /* Main.storyboard */,
 				2190359C266EFDA400B3F8AB /* Assets.xcassets */,
 				2190359E266EFDA400B3F8AB /* LaunchScreen.storyboard */,
 				219035A1266EFDA400B3F8AB /* Info.plist */,
-				219035A7266F098900B3F8AB /* DetailViewController.swift */,
 			);
 			path = ShopMeApp;
+			sourceTree = "<group>";
+		};
+		219035A9266F0B6F00B3F8AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21903597266EFDA200B3F8AB /* StoreFrontViewController.swift */,
+				219035A7266F098900B3F8AB /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		219035AA266F0DEF00B3F8AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				219035AD266F0E2300B3F8AB /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		219035AB266F0DFC00B3F8AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		219035AC266F0E0300B3F8AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219035AE266F0E2300B3F8AB /* Item.swift in Sources */,
 				21903598266EFDA200B3F8AB /* StoreFrontViewController.swift in Sources */,
 				21903594266EFDA200B3F8AB /* AppDelegate.swift in Sources */,
 				21903596266EFDA200B3F8AB /* SceneDelegate.swift in Sources */,
