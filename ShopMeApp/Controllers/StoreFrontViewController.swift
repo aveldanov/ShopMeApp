@@ -42,7 +42,12 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailVC") as? DetailViewController else {
+            fatalError("No DetailVC controller")
+        }
+        present(detailVC, animated: true, completion: nil)
+        
+        
     }
 
     @IBAction func restoreButtonClicked(_ sender: UIButton) {
