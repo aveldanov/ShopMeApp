@@ -12,12 +12,16 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
     
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
 
+        IAPService.shared.delegate = self
+        
     }
     
     
@@ -57,3 +61,14 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
     
 }
 
+
+
+extension StoreFrontViewController: IAPServiceDelegate{
+    func iapProductsLoaded() {
+        print("IAP Products Loaded")
+    }
+    
+    
+    
+    
+}
