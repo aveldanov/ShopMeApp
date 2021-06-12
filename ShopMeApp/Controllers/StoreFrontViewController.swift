@@ -20,7 +20,8 @@ class StoreFrontViewController: UIViewController,UICollectionViewDelegate, UICol
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        IAPService.shared.delegate = self
+        IAPService.shared.delegate = self // call delegate
+        IAPService.shared.loadData()
         
     }
     
@@ -67,8 +68,4 @@ extension StoreFrontViewController: IAPServiceDelegate{
     func iapProductsLoaded() {
         print("IAP Products Loaded")
     }
-    
-    
-    
-    
 }

@@ -7,5 +7,5 @@
 
 import Foundation
 
-
-let IAP_ITEM_ID = "com.aveldanov.ShopMeApp"
+//IAP in app purchase
+let IAP_ITEM_ID = "com.iap.item"

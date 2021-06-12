@@ -18,7 +18,7 @@ protocol IAPServiceDelegate {
 
 class IAPService: NSObject, SKProductsRequestDelegate {
 
-    static let shared = IAPService()
+    static var shared = IAPService()
     
     // 2 create property to hold the instance of DELEGATE
     var delegate: IAPServiceDelegate?
@@ -29,9 +29,10 @@ class IAPService: NSObject, SKProductsRequestDelegate {
     var products = [SKProduct]() // product of response from App Store
     
     
-    
     func loadData(){
+
          prodcutIdToStringSet()
+        print(productIds)
          requestProducts(forId: productIds)
     }
     
@@ -43,23 +44,30 @@ class IAPService: NSObject, SKProductsRequestDelegate {
         productRequest.cancel() // cancel all ongoing product requests
         productRequest = SKProductsRequest(productIdentifiers: ids)
         productRequest.delegate = self
-        
+        print(productRequest)
         //start the process to send request to App Store
         productRequest.start()
     }
     
     
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        
-        products = response.products
-        
+
+        self.products = response.products
+        print("PRODUCTS",products)
+
         // retry the call if no products
         if products.count == 0{
             requestProducts(forId: productIds)
         }else{
             // 3 if we conform in OTHER VC to this protocol, the we can call this function
             delegate?.iapProductsLoaded()
+            
+            print("BOOM",products[0].price)
         }
+    }
+    
+    func request(_ request: SKRequest, didFailWithError error: Error) {
+        print("ERROR", error)
     }
 }
 
