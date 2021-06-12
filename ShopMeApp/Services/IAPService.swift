@@ -8,6 +8,13 @@
 import Foundation
 import StoreKit
 
+// the protocol will allow to use delegation and pass between VCs
+protocol IAPServiceDelegate {
+    func iapProductsLoaded()
+}
+
+
+
 
 class IAPService: NSObject, SKProductsRequestDelegate {
 
@@ -41,6 +48,14 @@ class IAPService: NSObject, SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         
         products = response.products
+        
+        // retry the call if no products
+        if products.count == 0{
+            requestProducts(forId: productIds)
+        }else{
+            
+            
+        }
     }
 }
 
