@@ -15,11 +15,13 @@ class IAPService: NSObject, SKProductsRequestDelegate {
     var productIds = Set<String>()
     var productRequest = SKProductsRequest()
     
+    var products = [SKProduct]() // product of response from App Store
+    
+    
+    
     func loadData(){
-        // profuctIdToStringSet()
-        // requestProducts(productIds)
-        
-        
+         prodcutIdToStringSet()
+         requestProducts(forId: productIds)
     }
     
     func prodcutIdToStringSet(){
@@ -38,6 +40,7 @@ class IAPService: NSObject, SKProductsRequestDelegate {
     
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         
+        products = response.products
     }
 }
 
